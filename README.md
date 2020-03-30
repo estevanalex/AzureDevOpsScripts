@@ -1,6 +1,5 @@
 # AzureDevOpsScripts
-Some scripts to use on Azure DevOps Security Pipeline Automation.
+Powershell Scripts to use in the Pipeline Automation.
 
-If you want to improve the scripts feel free. I just ask you to revert the improvements to the repository and everybody can use them.
-
-Estevan
+Threadfix Upload: Grab a test result file and upload to Threadfix API without external dependencies (e.g. cURL, TF-CLI, etc).
+Threadfix FoD Sync: After Fortify On Demand task returns OK, ask to Threadfix to Sync the latest scan for the application. 
