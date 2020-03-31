@@ -1,4 +1,7 @@
 # This script works for one file only, for multple files chenges on Body part (a for instruction) and on the Threadfix URL are required.
+# How to use:
+# Copy and Paste into the Powershell Script Task (inline).
+#
 # You can use Azure DevOps Build Protected Variables for TF_APIKey and Build Variables for TF_APPID, TF_URL, FileUp.
 # To do list: 
 # - error handling (no file, upload error, upload status)

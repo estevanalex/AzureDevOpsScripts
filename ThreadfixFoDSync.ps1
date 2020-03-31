@@ -1,5 +1,8 @@
 # Get the latest scan from TF Remote Provider 
-# To use this script your must configure Threadfix Remote Provider with your Fortify On Demand instance
+# How to use:
+# Copy and Paste into the Powershell Script Task (inline).
+# To use this script your must configure Threadfix Remote Provider with your Fortify On Demand instance.
+#
 # You can use Azure DevOps Build Protected Variables for TF_APIKey and Build Variables for TF_APPID, TF_URL, TF_RPID. 
 # To do list: 
 #  (no file, upload error, upload status)
