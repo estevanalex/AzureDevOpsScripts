@@ -1,5 +1,8 @@
 # This script works for one file only, for multple files chenges on Body part (a for instruction) and on the Threadfix URL are required.
-# You can use Azure DevOps Build Protected Variables for API Key and Build Variables for APPID, URL, FileUp. 
+# You can use Azure DevOps Build Protected Variables for TF_APIKey and Build Variables for TF_APPID, TF_URL, FileUp.
+# To do list: 
+# - error handling (no file, upload error, upload status)
+# - multiple files (a for loop in the #Body part)
 
 # Enable PS to work with TLS
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
@@ -9,7 +12,7 @@ $TF_APPID = "1000"
 # ThreadFix URL - please change to your TF URL. 
 $TF_URL = "https://yourthreadfixURL.com" + "/rest/latest/applications/" + $TF_APPID + "/upload"
 # TF API Key - Use your API Key for Threadfix.
-$TF_APIKey = "4rjejed8dedyeddjn9ef3rhf9rfhrnc9h3dhe37d"
+$TF_APIKey = "<YOURAPIKEY>"
    
 # Header
 $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
